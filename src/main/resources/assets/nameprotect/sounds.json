@@ -1,0 +1,4 @@
+{
+  "hit_undertale": { "sounds": [ "nameprotect:hit_undertale" ] },
+  "hit_bubble":    { "sounds": [ "nameprotect:hit_bubble" ] }
+}

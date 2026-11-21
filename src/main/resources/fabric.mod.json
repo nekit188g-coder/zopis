@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "nameprotect",
+	"version": "${version}",
+	"name": "NameProtect / LoLHelper",
+	"description": "NameProtect (PULSE - DODGE 10%), TargetESP (без невидимок), TargetHUD, Hitsounds, Watermark. ClickGUI: Right Shift.",
+	"authors": ["You"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.nameprotect.NameProtectClient"]
+	},
+	"mixins": [
+		{ "config": "nameprotect.mixins.json", "environment": "client" }
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
