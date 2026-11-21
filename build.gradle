@@ -12,10 +12,8 @@ repositories {}
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
-    // !!! Код у src/main/java написаний з intermediary-іменами (class_1297, method_5805...).
-    // Рядок mappings має відповідати тому, як мод збирався раніше. Дефолт нижче — Mojang,
-    // але тоді імена class_* треба замінити на офіційні (або вкажіть ваші mappings).
-    mappings loom.officialMojangMappings()
+    // Intermediary names in src/main/java (class_*, method_*) require Yarn mappings.
+    mappings "net.fabricmc:yarn:${project.minecraft_version}+build.4:v2"
 
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
